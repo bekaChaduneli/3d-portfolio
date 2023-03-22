@@ -25,8 +25,8 @@ const Container = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    justify-content: flex-start;
+    padding: 15px;
   }
 `;
 
@@ -46,7 +46,11 @@ const Title = styled.h1`
   font-size: 74px;
   @media only screen and (max-width: 1440px) {
     text-align: center;
-    font-size: 24px;
+    font-size: 44px;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 30px;
   }
 `;
 const WhatWeDo = styled.div`
@@ -82,6 +86,11 @@ const Right_Bottom = styled.div`
   position: relative;
   animation: animate 2s infinite ease alternate;
   @media only screen and (max-width: 1440px) {
+    flex: 2;
+    width: 100%;
+    max-height: 600px;
+  }
+  @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
     max-height: 600px;
@@ -104,8 +113,12 @@ const Img = styled.img`
   right: 0;
   margin: auto;
   @media only screen and (max-width: 1440px) {
-    width: 300px;
-    height: 300px;
+    width: 40%;
+    max-width: 400px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 60%;
+    max-width: 350px;
   }
 `;
 
@@ -131,7 +144,7 @@ export default function Hero(props: any) {
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 100, 200]} scale={2.4}>
+            <Sphere args={[1, 100, 100]} scale={2.65}>
               <MeshDistortMaterial
                 color="#3d1c56"
                 attach="material"
