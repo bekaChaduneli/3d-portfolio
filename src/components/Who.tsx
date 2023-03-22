@@ -43,11 +43,13 @@ const Right_Bottom = styled.div`
   @media only screen and (max-width: 1440px) {
     align-items: center;
     text-align: center;
+    margin-bottom: 40px;
   }
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
     padding: 15px;
+    margin-bottom: 40px;
   }
 `;
 
