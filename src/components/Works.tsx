@@ -30,6 +30,10 @@ const Container = styled.div`
   @media only screen and (max-width: 1440px) {
     width: 100%;
     flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    height: 100vh;
+    align-items: center;
   }
 `;
 
@@ -48,6 +52,9 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media only screen and (max-width: 1440px) {
+    text-align: center;
+  }
 `;
 
 const ListItem = styled.li`
@@ -58,10 +65,15 @@ const ListItem = styled.li`
   -webkit-text-stroke: 1px white;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+
   @media only screen and (max-width: 1440px) {
-    font-size: 24px;
-    color: white;
-    -webkit-text-stroke: 0px;
+    font-size: 45px;
+  }
+  @media only screen and (max-width: 375px) {
+    font-size: 25px;
   }
 
   ::after {
@@ -90,6 +102,9 @@ const ListItem = styled.li`
 
 const Right_Top = styled.div`
   flex: 1;
+  @media only screen and (max-width: 1440px) {
+    width: 100%;
+  }
 `;
 
 export default function Works() {
