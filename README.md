@@ -14,7 +14,7 @@
 
 ### Links
 
-- Live Site URL: [Live site](https://3d-portfolio-nu.vercel.app/)
+- Live Site URL: [Live site](https://3d-portfolio-liard.vercel.app/)
 - Solution URL: [Solution URL](https://github.com/bekaChaduneli/3d-portfolio)
 
 ### Built with
