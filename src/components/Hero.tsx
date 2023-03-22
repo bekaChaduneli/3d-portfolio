@@ -40,6 +40,13 @@ const Left_Top = styled.div`
     flex: 1;
     align-items: center;
     text-align: center;
+    gap: 12px;
+  }
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
   }
 `;
 const Title = styled.h1`
@@ -69,6 +76,14 @@ const Desc = styled.p`
   color: lightgray;
   align-self: center;
   justify-self: center;
+  @media only screen and (max-width: 1440px) {
+    text-align: center;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 14px;
+  }
 `;
 const Button = styled.button`
   background-color: #da4ea2;
@@ -89,11 +104,13 @@ const Right_Bottom = styled.div`
     flex: 2;
     width: 100%;
     max-height: 600px;
+    margin-bottom: 40px;
   }
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
     max-height: 600px;
+    margin-bottom: 40px;
   }
 
   @keyframes animate {
