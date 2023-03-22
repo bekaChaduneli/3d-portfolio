@@ -28,7 +28,9 @@ const Container = styled.div`
 const Left_Top = styled.div`
   flex: 1;
   @media only screen and (max-width: 1440px) {
-    width: 70%;
+    width: 100%;
+    flex: 2;
+    min-height: 200px;
   }
 `;
 
@@ -42,12 +44,20 @@ const Right_Bottom = styled.div`
     align-items: center;
     text-align: center;
   }
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 74px;
   @media only screen and (max-width: 1440px) {
-    font-size: 60px;
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
   }
 `;
 const WhatWeDo = styled.div`
@@ -64,6 +74,12 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  @media only screen and (max-width: 1440px) {
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 const Button = styled.button`
   background-color: #da4ea2;
