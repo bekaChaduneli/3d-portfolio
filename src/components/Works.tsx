@@ -52,9 +52,6 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  @media only screen and (max-width: 1440px) {
-    text-align: center;
-  }
 `;
 
 const ListItem = styled.li`
@@ -90,7 +87,6 @@ const ListItem = styled.li`
   &:hover {
     ::after {
       animation: moveText 0.5s linear both;
-
       @keyframes moveText {
         to {
           width: 100%;
@@ -104,6 +100,7 @@ const Right_Top = styled.div`
   flex: 1;
   @media only screen and (max-width: 1440px) {
     width: 100%;
+    margin-bottom: 40px;
   }
 `;
 
