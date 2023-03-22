@@ -14,7 +14,7 @@ export function Football(props: any) {
   const { nodes, materials }: any = useGLTF("/football-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={50}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
         <mesh
           geometry={nodes.FootballBall_White_0.geometry}
           material={materials.White}
