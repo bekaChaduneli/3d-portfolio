@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Football } from "./Football";
 
 const Box = styled.div`
-  width: 40vw;
+  width: 30vw;
   display: flex;
   align-items: flex-end;
 `;
@@ -14,6 +14,9 @@ const Center = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1440px) {
+    height: 100vh;
+  }
 `;
 
 export default function FootballFile() {
@@ -21,7 +24,7 @@ export default function FootballFile() {
     <Center>
       <Box>
         <Canvas>
-          <Stage environment="city" intensity={0.6}>
+          <Stage environment="city" intensity={1}>
             <Football />
           </Stage>
           <OrbitControls enableZoom={false} />
