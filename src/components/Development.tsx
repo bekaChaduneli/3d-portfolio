@@ -4,23 +4,26 @@ import { Canvas } from "@react-three/fiber";
 import Atom from "./Atom";
 
 // Error boundary component
-class ErrorBoundary extends React.Component {
-  constructor(props) {
+class ErrorBoundary extends React.Component<
+  { children: React.ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: React.ReactNode }) {
     super(props);
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: any) {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-    console.error("Error in WebDesign component:", error, errorInfo);
+  componentDidCatch(error: any, errorInfo: any) {
+    console.error("Error:", error);
   }
 
   render() {
     if (this.state.hasError) {
-      return <div>Something went wrong while rendering the 3D model.</div>;
+      return <div>Something went wrong.</div>;
     }
     return this.props.children;
   }
